@@ -1,0 +1,42 @@
+{
+  "name": "github-popular-typescript-repos",
+  "version": "0.1.0",
+  "description": "Simple web application for viewing the most popular TypeScript repositories on GitHub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artischockee/github-popular-typescript-repos.git"
+  },
+  "keywords": [
+    "typescript",
+    "react",
+    "vite",
+    "graphql",
+    "emotion"
+  ],
+  "author": "Artem Piskarev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/artischockee/github-popular-typescript-repos/issues"
+  },
+  "homepage": "https://github.com/artischockee/github-popular-typescript-repos#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react-swc": "^3.3.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1"
+  }
+}
