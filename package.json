@@ -27,7 +27,9 @@
   },
   "homepage": "https://github.com/artischockee/github-popular-typescript-repos#readme",
   "dependencies": {
+    "@apollo/client": "^3.7.11",
     "@emotion/react": "^11.10.6",
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
