@@ -1,0 +1,21 @@
+.RepositoriesTable__table {
+  width: 100%;
+}
+
+.RepositoriesTable__tableHeaderCell[data-id="name"],
+.RepositoriesTable__tableHeaderCell[data-id="license"],
+.RepositoriesTable__tableHeaderCell[data-id="update"] {
+  width: 15%;
+}
+
+.RepositoriesTable__tableHeaderCell[data-id="description"] {
+  width: 45%;
+}
+
+.RepositoriesTable__tableHeaderCell[data-id="stars"] {
+  width: 10%;
+}
+
+.RepositoriesTable__fetchMoreButton {
+  margin-top: 16px;
+}
