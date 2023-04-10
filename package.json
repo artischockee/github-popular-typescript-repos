@@ -7,7 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/artischockee/github-popular-typescript-repos/issues"
   },
-  "homepage": "https://github.com/artischockee/github-popular-typescript-repos#readme",
+  "homepage": "https://artischockee.github.io/github-popular-typescript-repos",
   "dependencies": {
     "@apollo/client": "^3.7.11",
     "graphql": "^16.6.0",
@@ -35,6 +37,7 @@
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react-swc": "^3.3.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.8.7",
     "typescript": "^5.0.4",
     "vite": "^4.2.1"
