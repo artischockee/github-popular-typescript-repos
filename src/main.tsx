@@ -6,7 +6,27 @@ import "./index.css";
 
 const apolloClient = new ApolloClient({
   uri: "https://api.github.com/graphql",
-  cache: new InMemoryCache(),
+  cache: new InMemoryCache({
+    typePolicies: {
+      Query: {
+        fields: {
+          search: {
+            keyArgs: false,
+            merge(existing, incoming) {
+              if (existing == null) {
+                return incoming;
+              }
+
+              return {
+                ...existing,
+                edges: [...existing.edges, ...incoming.edges],
+              };
+            },
+          },
+        },
+      },
+    },
+  }),
   headers: {
     Authorization: `Bearer ${import.meta.env.VITE_GITHUB_TOKEN}`,
   },
